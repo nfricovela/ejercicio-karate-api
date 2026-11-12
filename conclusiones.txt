@@ -1,0 +1,23 @@
+# CONCLUSIONES - AUTOMATIZACIÓN API DEMOBLAZE
+
+Se desarrolló una suite de automatización utilizando Karate Framework para validar los servicios REST de registro de usuarios (Signup) e inicio de sesión (Login) de Demoblaze.
+
+Se implementaron cuatro escenarios de prueba, contemplando casos positivos y negativos:
+
+1. Registro de un usuario nuevo.
+2. Intento de registro de un usuario existente.
+3. Inicio de sesión con credenciales correctas.
+4. Inicio de sesión con contraseña incorrecta.
+
+Durante el desarrollo se identificaron diferencias entre las respuestas esperadas y las respuestas reales del servicio, especialmente en la estructura de los objetos JSON. A partir de estas observaciones, se ajustaron las aserciones para validar correctamente el contenido de las respuestas.
+
+La ejecución final obtuvo los siguientes resultados:
+
+- Escenarios ejecutados: 4.
+- Escenarios aprobados: 4.
+- Escenarios fallidos: 0.
+- Errores: 0.
+
+Karate Framework permitió automatizar las solicitudes HTTP, validar los códigos de estado y comprobar el contenido de las respuestas de los servicios evaluados. Adicionalmente, generó reportes HTML que facilitan la revisión y el análisis de los resultados.
+
+Se concluye que la automatización implementada cumple con los cuatro escenarios definidos para este ejercicio. Como recomendación, se propone mantener el uso de datos de prueba dinámicos y considerar la disponibilidad de los servicios externos en futuras ejecuciones.
